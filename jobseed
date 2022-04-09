@@ -1,5 +1,5 @@
-job('hello world') {
+job('all') {
   steps {
-    shell('echo "hello world"')
+    shell('echo "hello champ"')
       }
     }
