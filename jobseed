@@ -1,5 +1,18 @@
-job('pak') {
-  steps {
-    shell('echo "hello champ"')
-      }
-    }
+pipelineJob("Bhaisahab") {
+  
+  parameters {
+         stringParam('name', "", 'shubham')
+        }
+  definition {
+           cps {
+             script('''
+                 pipeline {
+                    agent any
+                    stages {
+                        stage('Greet') {
+                            steps {
+                                echo "Hello  bhai"
+                            }
+                         }
+                      }
+                   }
