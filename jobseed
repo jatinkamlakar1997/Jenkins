@@ -3,9 +3,6 @@ pipelineJob("Bhaisahab") {
   parameters {
          stringParam('name', "", 'shubham')
         }
-  definition {
-           cps {
-             script('''
                  pipeline {
                     agent any
                     stages {
@@ -15,4 +12,5 @@ pipelineJob("Bhaisahab") {
                             }
                          }
                       }
-                   }
+                      }
+                      }
