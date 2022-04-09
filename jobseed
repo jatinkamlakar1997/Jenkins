@@ -1,14 +1,10 @@
 pipelineJob("Bhaisahab") {
-  
-  parameters {
-         stringParam('name', "", 'shubham')
-        }
                  pipeline {
                     agent any
                     stages {
                         stage('Greet') {
                             steps {
-                                echo "Hello  bhai"
+                                echo 'Hello bhai'
                             }
                          }
                       }
